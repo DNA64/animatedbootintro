@@ -1,6 +1,6 @@
 playBootVideo(){
 
-  #chmod +x $rootfs/bin/fbff
+  chmod +x $rootfs/bin/fbff
   
   dd if=/dev/zero of=/dev/fb0 #Kill Framebuffer Device
   dd if=/dev/zero of=/dev/dsp #Kill Sound Device
