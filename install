@@ -1,0 +1,6 @@
+# animatedsplash.hmod 
+# v0.1a - Jan 26th, 2018
+# https://www.reddit.com/r/miniSNESmods/
+
+cfg_animatedsplash_enabled='y'
+return 1

@@ -1,0 +1,15 @@
+playBootVideo(){
+
+  #chmod +x $rootfs/bin/fbff
+  
+  dd if=/dev/zero of=/dev/fb0 #Kill Framebuffer Device
+  dd if=/dev/zero of=/dev/dsp #Kill Sound Device
+  
+  modprobe mali
+  
+  fbff -f -s -u $rootfs/boot.mp4 1> $rootfs/bootvideo.log 2>&1
+  waitTask fbff
+  return 0
+}
+
+playBootVideo
