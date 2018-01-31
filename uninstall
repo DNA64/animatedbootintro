@@ -6,5 +6,3 @@ rm -f "$rootfs/bin/fbff"
 rm -f "$rootfs/etc/preinit.d/p7008_bootvideo"
 rm -f "$rootfs/etc/preinit.d/p7009_bootvideo"
 rm -f "$rootfs/boot.mp4/"
-
-unset cfg_animatedsplash_enabled
